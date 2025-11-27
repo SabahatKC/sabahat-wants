@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How Sabahat Wants to be Known in 10–15 Years?</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(180deg, #b7e9ff, #ffe6f0);
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 800;
+        color: #12323a;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hint {
+        font-size: 14px;
+        margin-top: 5px;
+        color: rgba(0,0,0,0.55);
+        z-index: 10;
+        position: relative;
+    }
+
+    /* ☁ CLOUDS */
+    .cloud {
+        position: absolute;
+        background: #ffffffdd;
+        border-radius: 50px;
+        filter: blur(1px);
+        animation: floatClouds 20s linear infinite;
+        z-index: 1;
+    }
+
+    .cloud1 { width: 220px; height: 60px; top: 15%; left: 10%; }
+    .cloud2 { width: 280px; height: 65px; top: 8%; right: 8%; animation-duration: 28s; }
+    .cloud3 { width: 180px; height: 55px; top: 22%; left: 40%; animation-duration: 32s; }
+
+    @keyframes floatClouds {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(60px); }
+    }
+
+    /* 🌄 CSS-BASED MOUNTAINS (NO IMAGE, NEVER FAILS) */
+    .mountains {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40%;
+        background: linear-gradient(180deg, #9fe6a0, #6ecb7a);
+        border-top-left-radius: 50% 22%;
+        border-top-right-radius: 50% 22%;
+        z-index: 1;
+    }
+
+    /* ☀ SUN */
+    .sun {
+        position: absolute;
+        top: 5%;
+        right: 8%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #fff4b0, #ffc14d);
+        box-shadow: 0 0 70px #ffd87a;
+        animation: sunGlow 4s ease-in-out infinite alternate;
+        z-index: 1;
+    }
+
+    @keyframes sunGlow {
+        0% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(1.06); opacity: 0.85; }
+    }
+
+    /* ✨ FLOATING EMOJI SPARKLES */
+    .emoji {
+        position: absolute;
+        font-size: 34px;
+        animation: floatEmoji 3.5s ease-in-out infinite alternate;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    @keyframes floatEmoji {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-12px); opacity: 0.7; }
+    }
+
+    .emoji1 { top: 26%; left: 18%; animation-delay: 0.2s; }
+    .emoji2 { top: 30%; right: 20%; animation-delay: 0.4s; }
+    .emoji3 { top: 47%; left: 24%; animation-delay: 1s; }
+
+    /* ❓ PROMPT CARD */
+    .prompt {
+        width: 260px;
+        height: 260px;
+        background: white;
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 20;
+    }
+
+    .prompt .q {
+        font-size: 82px;
+        font-weight: bold;
+        color: #ff6b9a;
+    }
+
+    .prompt .sub {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #12323a;
+    }
+
+    /* PANEL */
+    .panel {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 82%;
+        height: 74%;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        display: none;
+        padding: 20px;
+        z-index: 30;
+    }
+
+    .content {
+        display: flex;
+        height: 100%;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .panel img {
+        max-width: 44%;
+        max-height: 85%;
+        border-radius: 12px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+    }
+
+    .text-area {
+        width: 40%;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.55;
+        color: #12323a;
+    }
+
+    .continue {
+        margin-top: 20px;
+        padding: 11px 20px;
+        background: linear-gradient(90deg, #ff6b9a, #6bb1ff);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>How Sabahat Wants to be Known in 10–15 years?</h1>
+<div class="hint">Click the ❓ or press Enter to continue</div>
+
+<!-- BACKGROUND DECOR -->
+<div class="sun"></div>
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+<div class="mountains"></div>
+
+<!-- FLOATING EMOJIS -->
+<div class="emoji emoji1">✨</div>
+<div class="emoji emoji2">🌸</div>
+<div class="emoji emoji3">💫</div>
+
+<!-- PROMPT CARD -->
+<div class="prompt" id="prompt" onclick="openPanel()">
+    <div class="q">❓</div>
+    <div class="sub" id="promptText">Click to begin</div>
+</div>
+
+<!-- PANEL -->
+<div class="panel" id="panel">
+    <div class="content">
+        <img id="sceneImage" src="">
+        <div class="text-area">
+            <h2 id="sceneTitle"></h2>
+            <p id="sceneText"></p>
+            <button class="continue" onclick="nextScene()">Continue</button>
+        </div>
+    </div>
+</div>
+
+<script>
+let index = 0;
+
+/* YOUR ORIGINAL TEXTS — EXACTLY */
+const images = ["Image1.png","Image2.png","Image3.png","Image4.png"];
+
+const titles = [
+    "In the next 10–15 years, to my colleagues, I want to be known as…",
+    "In the next 10–15 years, to my friends, I want to be known as…",
+    "In the next 10–15 years, to my family, I want to be known as…",
+    "In the next 10–15 years, to the world, I want to be known as…"
+];
+
+const texts = [
+    "A great leader and a dependable team-player... someone who grows with her people and celebrates every milestone together.",
+    "A woman who has grown over the years into a more adventurous, hardworking and warm-hearted soul... a go-getter, a giver, and someone who carries endless love for everyone around her. A true philanthropist at heart ♥",
+    "A responsible daughter who gave her parents comfort, stability and a beautiful retirement... someone who kept life steady, grounded and full of care.",
+    "A creative force who made a meaningful mark... perhaps even India’s new Piyush Pandey!"
+];
+
+function loadScene() {
+    document.getElementById("sceneImage").src = images[index];
+    document.getElementById("sceneTitle").innerText = titles[index];
+    document.getElementById("sceneText").innerText = texts[index];
+}
+
+function openPanel() {
+    document.getElementById("prompt").style.display = "none";
+    document.getElementById("panel").style.display = "block";
+    loadScene();
+}
+
+function nextScene() {
+    index++;
+    if (index === images.length) {
+        alert("Thank you for watching Sabahat’s journey 🌟");
+        window.location.reload();
+        return;
+    }
+    loadScene();
+}
+
+/* ENTER KEY SUPPORT */
+document.addEventListener("keydown", function(e){
+    if (e.key === "Enter") {
+        if (document.getElementById("prompt").style.display !== "none") {
+            openPanel();
+        } else {
+            nextScene();
+        }
+    }
+});
+</script>
+
+</body>
+</html>
